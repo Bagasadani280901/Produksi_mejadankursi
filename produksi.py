@@ -27,8 +27,8 @@ with tab1:
     
     if res.success:
         x, y = res.x
-        st.success(f"Jumlah Blender (x): {x:.2f}")
-        st.success(f"Jumlah Pemanggang Roti (y): {y:.2f}")
+        st.success(f"Jumlah Meja (x): {x:.2f}")
+        st.success(f"Jumlah Kursi (y): {y:.2f}")
         st.info(f"Total Keuntungan Maksimum: Rp{(-res.fun)*1000:,.0f}")
 
         # Visualisasi grafik batasan
@@ -38,8 +38,8 @@ with tab1:
         plt.figure()
         plt.plot(x_vals, y_vals, label="2x + 3y = 100")
         plt.fill_between(x_vals, 0, y_vals, alpha=0.3)
-        plt.xlabel("Produk A (Blender)")
-        plt.ylabel("Produk B (Pemanggang Roti)")
+        plt.xlabel("Produk A (Meja)")
+        plt.ylabel("Produk B (Kursi)")
         plt.axhline(0)
         plt.axvline(0)
         plt.scatter(x, y, color='red', label='Solusi Optimal')
