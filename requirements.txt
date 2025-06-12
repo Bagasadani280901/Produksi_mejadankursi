@@ -1,4 +1,5 @@
 streamlit 
-numpy 
-matplotlib.pyplot
-scipy.optimize
+numpy
+matplotlib
+scipy
+pandas
